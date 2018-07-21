@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrystalCollector</title>
+
+    <!-- Link to jQuerry Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Link to google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <!-- Link to JS -->
+    <script src="assets/js/game.js"></script>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    
+    <div class="jumbotron">
+        <h1 class="text-center" id="main-header">Crystal Collector</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <h3 class="card-header">
+                        Rules
+                    </h3>
+                    <div class="card-body">
+                        <p class="rules">1. You will be given a random number at the start of the game.</p>
+                        <p class="rules">2. There are four crystals. By clicking on a crystal, you will be adding a specific amount of points to your "Total Score."</p>
+                        <p class="rules">3. You win the game by matching your "Total Score" to the "Goal" number. You lose the game if your "Total Score" surpasses the "Goal" number.</p>
+                        <p class="rules">4. The value of each crystal is hidden until clicked.</p>
+                        <p class="rules">5. Each time the game starts, the value of each crystal is randomized.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card" id="crystal-card">
+                    <div class="card-body" id="asdf">
+                        <img class="crystal" id="green" src="assets/img/greencrystal.png"/>
+                    </div>
+                    <div class="card-body" id="asdf">
+                        <img class="crystal" id="magma" src="assets/img/magmacrystal.png"/>
+                    </div>
+                    <div class="card-body" id="asdf">
+                        <img class="crystal" id="storm" src="assets/img/stormcrystal.png"/>
+                    </div>
+                    <div class="card-body" id="asdf">
+                        <img class="crystal" id="plasma" src="assets/img/plasmacrystal.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card" id>
+                    <div class="scoreboard" id="randomScore"></div>
+                    <div class="scoreboard" id="tracker">
+                        <div id="wins">
+                            <p class="wins">Wins: 0</p>
+                        </div>
+                        <div id="losses">
+                            <p class="losses">Losses: 0</p>
+                        </div>
+                    </div>
+                    <div class="scoreboard" id="total-score">
+                        <p class="total">Total Score: 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
