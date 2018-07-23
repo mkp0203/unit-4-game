@@ -32,11 +32,9 @@
                         Rules
                     </h3>
                     <div class="card-body">
-                        <p class="rules">1. You will be given a random number at the start of the game.</p>
-                        <p class="rules">2. There are four crystals. By clicking on a crystal, you will be adding a specific amount of points to your "Total Score."</p>
-                        <p class="rules">3. You win the game by matching your "Total Score" to the "Goal" number. You lose the game if your "Total Score" surpasses the "Goal" number.</p>
-                        <p class="rules">4. The value of each crystal is hidden until clicked.</p>
-                        <p class="rules">5. Each time the game starts, the value of each crystal is randomized.</p>
+                        <p class="rules"><span class="span-title">OBJECT</span> Click crystals to see their hidden values and attempt to make the Current number match the Goal number.</p>
+                        <p class="rules"><span class="span-title">GAMEPLAY</span> You will be given a random number at the start of the game, labeled Goal. There are four crystals. By clicking on a crystal, you will be adding a specific amount of points to the Current number.</p>
+                        <p class="rules"><span class="span-title">HOW TO WIN</span> You win the game by matching the Current number to the Goal number. If the Current number surpasses the Goal number, GAME OVER!</p>
                     </div>
                 </div>
             </div>
@@ -59,18 +57,18 @@
             </div>
 
             <div class="col-lg-5">
-                <div class="card" id>
-                    <div class="scoreboard" id="randomScore"></div>
-                    <div class="scoreboard" id="tracker">
+                <div class="card" id="playarea">
+                    <div class="scoreboard padding" id="randomScore"></div>
+                    <div class="scoreboard2 padding" id="total-score">
+                        <p class="total">Current: 0</p>
+                    </div>
+                    <div class="scoreboard3" id="tracker">
                         <div id="wins">
                             <p class="wins">Wins: 0</p>
                         </div>
                         <div id="losses">
                             <p class="losses">Losses: 0</p>
                         </div>
-                    </div>
-                    <div class="scoreboard" id="total-score">
-                        <p class="total">Total Score: 0</p>
                     </div>
                 </div>
             </div>

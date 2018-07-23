@@ -1,8 +1,10 @@
+/* Global */
 body {
     background: url("../img/light.jpg") center;
     box-sizing: border-box;
 }
 
+/* Header */
 .jumbotron {
     background: url("../img/header.jpg") center 320px;
     border-radius: 0;
@@ -13,83 +15,134 @@ body {
 }
 
 #main-header {
-    background: #8fc4ff;
-    opacity: .9;
-    box-shadow: 0px 0px 10px 10px #8fc4ff;
+    background: #7e8ae1;
+    box-shadow: 0px 0px 10px 10px black;
     width: 500px;
     height: 100%;
     margin: auto;
-    padding: 0;
+    padding: 10px;
     border-radius: 5px;
     font-family: 'MedievalSharp', cursive;
     font-size: 60px;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
-#rules {
-    background: #7e8ae1;
+/* Main-Content Area */
+.row {
+    max-height: 518px;
+    box-sizing: border-box;
 }
 
 .card {
     border: none;
     box-shadow: 0px 0px 10px 1px;
-    border-radius: 3px;
+    height: 100%;
+    padding: 5px;
+    background-color: #7e8ae1;
 }
 
 .card-header {
     font-family: 'MedievalSharp', cursive;
-    /* background: #3795ff; */
+    background: #d3d3d3;
     font-weight: bold;
     text-align: center;
     font-size: 36px;
 }
 
 .card-body {
-    /* background: #8fc4ff; */
+    background: #ddd;
     text-align: center;
     font-family: 'Rubik', sans-serif;
     padding: 10px;
-    height: 450px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
+/* Rules Paragraphs */
 .rules {
     font-size: 16px;
     line-height: 1.75;
-    text-align: justify;
+    text-align: left;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.span-title {
+    font-weight: bold;
+    background-color: #7e8ae1;
+    border-radius: 2px;
+    padding: 4px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.span-bold {
     font-weight: bold;
 }
 
-#game-area {
-    background: rgb(109, 162, 241);
-    color: white;
-}
-
-img {
-    vertical-align: none;
-}
-
-.crystal {
+/* Crystal Images */
+.crystal{
     height: 100px;
     width: 120px;
-    margin: 6px;
     box-shadow: 0px 0px 10px 1px;
+    background-color: #7e8ae1;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
 }
 
 #crystal-card {
-    text-align: middle;
+    text-align: center;
+    background-color: #7e8ae1;
+    padding: 5px;
+}
+
+/* Tracker Area */
+#playarea {
+    padding: 5px;
+    background-color: #7e8ae1;
 }
 
 .scoreboard {
-    /* background-color: #8fc4ff; */
-    padding: 30px;
+    background-color: #ddd;
     text-align: center;
+    padding-top: 15px;
     font-size: 30px;
-    height: 170px;
-    border: 1px solid black;
-    border-radius: 2px;
+    height: 33.33%;
+    font-size: 40px;
+    border-bottom: solid black 1px;
 }
 
-#asdf {
-    height: 129px;
+.scoreboard2 {
+    background-color: rgba(221, 221, 221, 0.863);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 30px;
+    height: 33.33%;
+    font-size: 40px;
+    border-bottom: solid black 1px;
+}
+
+.scoreboard3 {
+    background-color: rgba(221, 221, 221, 0.637);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 30px;
+    height: 33.33%;
+    font-size: 40px;
+}
+
+.padding {
+    padding-top: 45px;
+}
+
+#wins {
+    padding: 0;
+    margin: 0;
+    border-bottom: dashed #858585 1px;
+}
+
+#losses {
+    padding-top: 5px;
 }

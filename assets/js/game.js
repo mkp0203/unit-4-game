@@ -44,7 +44,7 @@ $(document).ready(function () {
 
         totalScore = greenCrystal + totalScore;
         tracker();
-        $("#total-score").html("Total Score: " + totalScore);
+        $("#total-score").html("Current: " + totalScore);
 
     });
 
@@ -52,7 +52,7 @@ $(document).ready(function () {
 
         totalScore = magmaCrystal + totalScore;
         tracker();
-        $("#total-score").html("Total Score: " + totalScore);
+        $("#total-score").html("Current: " + totalScore);
 
     });
 
@@ -60,7 +60,7 @@ $(document).ready(function () {
 
         totalScore = stormCrystal + totalScore;
         tracker();
-        $("#total-score").html("Total Score: " + totalScore);
+        $("#total-score").html("Current: " + totalScore);
 
     });
 
@@ -68,7 +68,7 @@ $(document).ready(function () {
 
         totalScore = plasmaCrystal + totalScore;
         tracker();
-        $("#total-score").html("Total Score: " + totalScore);
+        $("#total-score").html("Current: " + totalScore);
 
     });
     
