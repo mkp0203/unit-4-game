@@ -11,18 +11,17 @@ body {
     box-shadow: 0px 2px 20px 0px;
     padding: 50px;
     margin-bottom: 40px;
-    opacity: .9;
 }
 
 #main-header {
     background: #7e8ae1;
-    box-shadow: 0px 0px 10px 10px black;
+    box-shadow: 0px 0px 10px 5px black;
     width: 500px;
     height: 100%;
     margin: auto;
     padding: 10px;
     border-radius: 5px;
-    font-family: 'MedievalSharp', cursive;
+    font-family: 'Rubik', sans-serif;
     font-size: 60px;
     font-weight: bold;
     color: white;
@@ -36,22 +35,22 @@ body {
 
 .card {
     border: none;
-    box-shadow: 0px 0px 10px 1px;
+    box-shadow: 0px 0px 10px 2px;
     height: 100%;
     padding: 5px;
     background-color: #7e8ae1;
 }
 
 .card-header {
-    font-family: 'MedievalSharp', cursive;
-    background: #d3d3d3;
+    font-family: 'Rubik', sans-serif;
+    background-color: rgba(221, 221, 221, 0.637);
     font-weight: bold;
     text-align: center;
     font-size: 36px;
 }
 
 .card-body {
-    background: #ddd;
+    background-color: rgba(221, 221, 221, 0.863);
     text-align: center;
     font-family: 'Rubik', sans-serif;
     padding: 10px;
@@ -61,11 +60,11 @@ body {
 
 /* Rules Paragraphs */
 .rules {
-    font-size: 16px;
-    line-height: 1.75;
+    font-size: 17px;
+    line-height: 1.5;
     text-align: left;
     font-weight: bold;
-    padding: 3px;
+    padding: 10px;
 }
 
 .span-title {
@@ -75,17 +74,15 @@ body {
     padding: 4px;
     font-size: 20px;
     text-align: center;
-}
-
-.span-bold {
-    font-weight: bold;
+    box-shadow: 0px 0px 1px 1px black;
+    margin-right: 5px;
 }
 
 /* Crystal Images */
 .crystal{
     height: 100px;
     width: 120px;
-    box-shadow: 0px 0px 10px 1px;
+    box-shadow: 0px 0px 2px 2px black;
     background-color: #7e8ae1;
     border-radius: 5px;
     margin-top: 5px;
@@ -102,26 +99,27 @@ body {
 #playarea {
     padding: 5px;
     background-color: #7e8ae1;
+    font-family: 'Rubik', sans-serif;
 }
 
 .scoreboard {
-    background-color: #ddd;
+    background-color: rgba(221, 221, 221, 0.863);
     text-align: center;
-    padding-top: 15px;
+    padding-top: 16px;
     font-size: 30px;
     height: 33.33%;
     font-size: 40px;
-    border-bottom: solid black 1px;
+    border-bottom: solid black 2px;
 }
 
 .scoreboard2 {
-    background-color: rgba(221, 221, 221, 0.863);
+    background-color: rgba(221, 221, 221, 0.719);
     text-align: center;
-    padding-top: 15px;
+    padding-top: 16px;
     font-size: 30px;
     height: 33.33%;
     font-size: 40px;
-    border-bottom: solid black 1px;
+    border-bottom: solid black 2px;
 }
 
 .scoreboard3 {
@@ -140,7 +138,7 @@ body {
 #wins {
     padding: 0;
     margin: 0;
-    border-bottom: dashed #858585 1px;
+    border-bottom: dashed #858585 2px;
 }
 
 #losses {
