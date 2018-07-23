@@ -3,75 +3,92 @@ var wins = 0;
 var losses = 0;
 var totalScore = 0;
 
-// crystal variables randomly 1-12
-var green = Math.floor((Math.random() * 12) + 1);
-var magma = Math.floor((Math.random() * 12) + 1);
-var storm = Math.floor((Math.random() * 12) + 1);
-var plasma = Math.floor((Math.random() * 12) + 1);
+var greenCrystal;
+var magmaCrystal;
+var stormCrystal;
+var plasmaCrystal;
+var goalNum;
+
+// Function to start the game when the page loads
+function startGame() {
+
+    greenCrystal = randCrystalNum();
+    magmaCrystal = randCrystalNum();
+    stormCrystal = randCrystalNum();
+    plasmaCrystal = randCrystalNum();
+    goalNum = randGoalNum();
+
+    $("#randomScore").html("Goal: " + goalNum);
+
+};
+
+// Get random crystal numbers when page loads
+function randCrystalNum () {
+
+    return Math.floor(Math.random() * 12 + 1);
+
+};
+
+// Get random goal number when page loads
+function randGoalNum () {
+
+    return Math.floor(Math.random() * 101 + 19);
+
+};
 
 $(document).ready(function () {
 
-    var random = Math.floor((Math.random() * 102) + 19);
-    $("#randomScore").html("<p>Target number: " + random + "</p>");
+    startGame();
 
-    // each crystal grabbing onto TotalScore div
     $("#green").click(function () {
-        totalScore = green + totalScore;
+
+        totalScore = greenCrystal + totalScore;
         tracker();
         $("#total-score").html("Total Score: " + totalScore);
-    })
+
+    });
 
     $("#magma").click(function () {
-        totalScore = magma + totalScore;
+
+        totalScore = magmaCrystal + totalScore;
         tracker();
         $("#total-score").html("Total Score: " + totalScore);
-    })
+
+    });
 
     $("#storm").click(function () {
-        totalScore = storm + totalScore;
+
+        totalScore = stormCrystal + totalScore;
         tracker();
         $("#total-score").html("Total Score: " + totalScore);
-    })
+
+    });
 
     $("#plasma").click(function () {
-        totalScore = plasma + totalScore;
+
+        totalScore = plasmaCrystal + totalScore;
         tracker();
         $("#total-score").html("Total Score: " + totalScore);
-    })
+
+    });
     
     // track wins and losses
     function tracker() {
 
-        if (totalScore === random) {
+        if (totalScore === goalNum) {
+
             $("#wins").html("Wins: " + (wins += 1));
             totalScore = 0;
-            randomReset();
-            crystalReset();
-        } else if (totalScore > random) {
+            startGame();
+
+        } else if (totalScore > goalNum) {
+
             $("#losses").html("Losses: " + (losses += 1));
             totalScore = 0;
-            randomReset();
-            crystalReset();
+            startGame();
+
         }
 
     }
 
-    // resets the random number
-    function randomReset() {
-
-        random = Math.floor((Math.random() * 102) + 19);
-        $("#randomScore").html("<p>Target number: " + random + "</p>");
-
-    }
-
-    // resets the crystal values
-    function crystalReset() {
-
-        green = Math.floor((Math.random() * 12) + 1);
-        magma = Math.floor((Math.random() * 12) + 1);
-        storm = Math.floor((Math.random() * 12) + 1);
-        plasma = Math.floor((Math.random() * 12) + 1);
-
-    }
-
-})
+});
