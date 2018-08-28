@@ -1,4 +1,6 @@
-# Crystal Collector Game (https://mkp0203.github.io/unit-4-game/)
+# Crystal Collector Game
+
+- https://mkp0203.github.io/unit-4-game/
 
 - OBJECT Click crystals to see their hidden values and attempt to make the Current number match the Goal number.
 
